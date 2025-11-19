@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/FirewallApp",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                { "name": "QT_PLUGIN_PATH", "value": "/Users/tt/Qt/6.9.3/macos/plugins" },
+                { "name": "DYLD_LIBRARY_PATH", "value": "/Users/tt/Qt/6.9.3/macos/lib" }
+],
+            "externalConsole": false
+        }
+    ]
+}

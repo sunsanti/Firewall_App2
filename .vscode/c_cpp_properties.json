@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/homebrew/Cellar/libpqxx/7.10.3/include",
+                "/Users/tt/Qt/6.9.3/macos/lib/QtCore.framework/Headers",
+                "/Users/tt/Qt/6.9.3/macos/lib/QtGui.framework/Headers",
+                "/Users/tt/Qt/6.9.3/macos/lib/QtWidgets.framework/Headers",
+                "/Users/tt/Qt/6.9.3/macos/lib/QtCore.framework/Headers",
+                "/Users/tt/Qt/6.9.3/macos/lib/QtSql.framework/Headers",
+                "/Users/tt/Documents/university/year3/DACS4/Firewall_app2",
+                "/Users/tt/Documents/university/year3/DACS4/Firewall_app2/models",  
+                "/Users/tt/Documents/university/year3/DACS4/Firewall_app2/viewmodels",
+                "/Users/tt/Qt/6.9.3/macos/lib"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version": 4
+}
