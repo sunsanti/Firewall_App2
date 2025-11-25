@@ -11,7 +11,7 @@ FirewallViewModel::FirewallViewModel(QObject* parent) : QObject(parent) {
 
 bool FirewallViewModel::connectDatabase() {
     m_db = QSqlDatabase::addDatabase("QPSQL");
-    m_db.setHostName("localhost");
+    m_db.setHostName("192.168.100.90");
     m_db.setPort(5432);
     m_db.setDatabaseName("firewall_db");
     m_db.setUserName("postgres"); // đổi tên user

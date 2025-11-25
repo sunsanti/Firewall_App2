@@ -9,11 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "FirewallApp_autogen/timestamp" "custom" "FirewallApp_autogen/deps"
-  "/Users/tt/Documents/university/year3/DACS4/Firewall_app2/build/FirewallApp_autogen/mocs_compilation.cpp" "CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o.d"
-  "/Users/tt/Documents/university/year3/DACS4/Firewall_app2/main.cpp" "CMakeFiles/FirewallApp.dir/main.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/main.cpp.o.d"
-  "/Users/tt/Documents/university/year3/DACS4/Firewall_app2/models/FirewallPacket.cpp" "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o.d"
-  "/Users/tt/Documents/university/year3/DACS4/Firewall_app2/models/FirewallRule.cpp" "CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o.d"
-  "/Users/tt/Documents/university/year3/DACS4/Firewall_app2/viewmodels/FirewallViewModel.cpp" "CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o.d"
+  "/home/quanduong/Downloads/Firewall_App2/build/FirewallApp_autogen/mocs_compilation.cpp" "CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o.d"
+  "/home/quanduong/Downloads/Firewall_App2/main.cpp" "CMakeFiles/FirewallApp.dir/main.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/main.cpp.o.d"
+  "/home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp" "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o.d"
+  "/home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp" "CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o.d"
+  "/home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.cpp" "CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

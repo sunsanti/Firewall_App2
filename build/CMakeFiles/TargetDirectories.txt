@@ -1,5 +1,5 @@
-/Users/tt/Documents/university/year3/DACS4/Firewall_app2/build/CMakeFiles/FirewallApp.dir
-/Users/tt/Documents/university/year3/DACS4/Firewall_app2/build/CMakeFiles/edit_cache.dir
-/Users/tt/Documents/university/year3/DACS4/Firewall_app2/build/CMakeFiles/rebuild_cache.dir
-/Users/tt/Documents/university/year3/DACS4/Firewall_app2/build/CMakeFiles/FirewallApp_autogen_timestamp_deps.dir
-/Users/tt/Documents/university/year3/DACS4/Firewall_app2/build/CMakeFiles/FirewallApp_autogen.dir
+/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/FirewallApp.dir
+/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/edit_cache.dir
+/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/rebuild_cache.dir
+/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/FirewallApp_autogen_timestamp_deps.dir
+/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/FirewallApp_autogen.dir
