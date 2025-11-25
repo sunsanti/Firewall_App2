@@ -12,7 +12,6 @@ int main(int argc, char *argv[]) {
     // vm.addRule(FirewallRule(QString("10.0.0.1"), 22, QString("TCP"), QString("DENY")));
 
     // vm.deleteRule(2);
-    vm.handlePacket(FirewallPacket(QString("192.169.1.1"),QString("192.168.1.12"), 22, 22,QString("TCP"),QString("hihi")), 6);
 
     for (const auto& r : vm.loadRules()) {
     std::cout << r.id() << " " 

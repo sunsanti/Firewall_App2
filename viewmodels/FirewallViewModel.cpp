@@ -2,6 +2,9 @@
 #include <QtSql/QSqlQuery>
 #include <QtSql/QSqlError>
 #include <QDebug>
+#include <netinet/in.h>
+#include <linux/netfilter.h>
+#include <libnetfilter_queue/libnetfilter_queue.h>
 
 FirewallViewModel::FirewallViewModel(QObject* parent) : QObject(parent) {
     if (!connectDatabase()) {
@@ -76,32 +79,44 @@ QVector<FirewallRule> FirewallViewModel::loadRules() {
 }
 
 //this use to handle the packet from computer to computer
-bool FirewallViewModel::checkRule(const FirewallRule rule) {
-    if(rule.action() == "DENY") {
-        return false;
-    } else {
-        return true;
+//in here dont have allow the income or deny outcome
+QString FirewallViewModel::checkPacket(const FirewallPacket &packet){
+    QSqlQuery query("SELECT * FROM firewall_rules");
+    while(query.next()){
+        QString ip = query.value(1).toString();
+        int port = query.value(2).toInt();
+        QString action = query.value(4).toString();
+        if(packet.srcIp() == ip && (port == 0 || packet.srcPort() == port)) {
+            return action;
+        }
     }
+    return "ALLOW";
 }
-void FirewallViewModel::forwardPacket(const FirewallPacket &packet) {
-    qDebug() << "Forwarding to " << packet.desIp() << " port " << packet.desPort();
+
+static int cb_input(struct nfq_q_handle* qh, struct nfgenmsg*, struct nfq_data* nfa, void* data) {
+        FirewallViewModel* self = static_cast<FirewallViewModel*>(data);
+        return self->processIncoming(nfa, qh);
 }
-void FirewallViewModel::dropPacket(const FirewallPacket &packet) {
-    qDebug() << "Dropping to " << packet.srcIp() << " port " << packet.srcPort();
-}
-void FirewallViewModel::handlePacket(const FirewallPacket &packet,int id) {
-    QSqlQuery query;
-    QString action;
-    query.prepare("SELECT * FROM firewall_rules WHERE id=:id");
-    query.bindValue(":id", QVariant(static_cast<qlonglong>(id)));
-    query.exec();
-    if (query.next()) {
-        action = query.value(4).toString(); 
+    int processIncoming(struct nfq_data* nfa, struct nfq_q_handle* qh) {
+        unsigned char* pktData;
+        int id = nfq_get_msg_packet_hdr(nfa)->packet_id;
+        int len = nfq_get_payload(nfa, &pktData);
+
+        if(len >= 0) {
+            QString srcIP = parseSrcIP(pktData);
+            int srcPort = parseSrcPort(pktData);
+
+            FirewallPacket packet(srcIP, srcPort, "", 0);
+            QString result = checkPacket(packet);
+
+            if(result == "DENY") {
+                std::cout << "[IN] DROP " << srcIP.toStdString() << ":" << srcPort << "\n";
+                return nfq_set_verdict(qh, id, NF_DROP, 0, nullptr);
+            } else {
+                std::cout << "[IN] ACCEPT " << srcIP.toStdString() << ":" << srcPort << "\n";
+                return nfq_set_verdict(qh, id, NF_ACCEPT, 0, nullptr);
+            }
+        }
+        return nfq_set_verdict(qh, id, NF_ACCEPT, 0, nullptr);
     }
-    if(action == "DENY") {
-        dropPacket(packet);
-    } else {
-        forwardPacket(packet);
-    }
-}
 
