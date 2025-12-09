@@ -70,7 +70,7 @@ CMakeFiles/FirewallApp_autogen: FirewallApp_autogen/timestamp
 
 FirewallApp_autogen/timestamp: /usr/lib/qt6/libexec/moc
 FirewallApp_autogen/timestamp: CMakeFiles/FirewallApp_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target FirewallApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target FirewallApp"
 	/usr/bin/cmake -E cmake_autogen /home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/FirewallApp_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/quanduong/Downloads/Firewall_App2/build/FirewallApp_autogen/timestamp
 

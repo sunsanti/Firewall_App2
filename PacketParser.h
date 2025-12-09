@@ -5,17 +5,27 @@
 
 class PacketParser {
 public:
-    // Parse IP nguồn từ packet (IP header bắt đầu từ byte 14 nếu có Ethernet header 14 byte)
-    static QString parseSrcIP(const unsigned char* pkt);
+    static bool isIPv4(const unsigned char* pkt);
+    static bool isIPv6(const unsigned char* pkt);
 
-    // Parse IP đích từ packet
-    static QString parseDstIP(const unsigned char* pkt);
+    static QString parseIPv4Src(const unsigned char* pkt);
+    static QString parseIPv4Dst(const unsigned char* pkt);
 
-    // Parse port nguồn (TCP/UDP header bắt đầu ngay sau IP header)
-    static int parseSrcPort(const unsigned char* pkt);
+    static int parseIPv4SrcPort(const unsigned char* pkt);
+    static int parseIPv4DstPort(const unsigned char* pkt);
 
-    // Parse port đích
-    static int parseDstPort(const unsigned char* pkt);
+    static QString parseIPv6Src(const unsigned char* pkt);
+    static QString parseIPv6Dst(const unsigned char* pkt);
+
+    static int parseIPv6SrcPort(const unsigned char* pkt);
+    static int parseIPv6DstPort(const unsigned char* pkt);
+
+    static int getTCPFlags(const unsigned char* pkt);
+
+    static int getIPv4HeaderLen(const unsigned char* pkt);
+
+    static bool isTCP_RST(const unsigned char* data);
 };
+
 
 #endif // PACKETPARSER_H

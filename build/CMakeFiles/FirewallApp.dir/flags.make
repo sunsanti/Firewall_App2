@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB
 
-CXX_INCLUDES = -I/home/quanduong/Downloads/Firewall_App2/build/FirewallApp_autogen/include -I/home/quanduong/Downloads/Firewall_App2/models -I/home/quanduong/Downloads/Firewall_App2/viewmodels -isystem /usr/include/aarch64-linux-gnu/qt6/QtCore -isystem /usr/include/aarch64-linux-gnu/qt6 -isystem /usr/lib/aarch64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/aarch64-linux-gnu/qt6/QtSql
+CXX_INCLUDES = -I/home/quanduong/Downloads/Firewall_App2/build/FirewallApp_autogen/include -I/home/quanduong/Downloads/Firewall_App2 -I/home/quanduong/Downloads/Firewall_App2/models -I/home/quanduong/Downloads/Firewall_App2/viewmodels -isystem /usr/include/aarch64-linux-gnu/qt6/QtCore -isystem /usr/include/aarch64-linux-gnu/qt6 -isystem /usr/lib/aarch64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/aarch64-linux-gnu/qt6/QtSql
 
-CXX_FLAGS = 
+CXX_FLAGS = -Wall -Wextra -std=c++17
 

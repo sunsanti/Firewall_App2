@@ -331,4 +331,31 @@ CMakeFiles/FirewallApp.dir/main.cpp.o: \
  /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.h \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstring.h \
- /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h
+ /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
+ /home/quanduong/Downloads/Firewall_App2/PacketParser.h \
+ /usr/include/libnetfilter_queue/libnetfilter_queue.h \
+ /usr/include/aarch64-linux-gnu/sys/time.h \
+ /usr/include/libnfnetlink/libnfnetlink.h \
+ /usr/include/aarch64-linux-gnu/sys/socket.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/aarch64-linux-gnu/bits/socket.h \
+ /usr/include/aarch64-linux-gnu/bits/socket_type.h \
+ /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
+ /usr/include/aarch64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/aarch64-linux-gnu/asm/posix_types.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/aarch64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/linux/netlink.h /usr/include/linux/const.h \
+ /usr/include/linux/socket.h /usr/include/linux/types.h \
+ /usr/include/aarch64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/libnfnetlink/linux_nfnetlink.h \
+ /usr/include/libnfnetlink/linux_nfnetlink_compat.h \
+ /usr/include/byteswap.h \
+ /usr/include/libnetfilter_queue/linux_nfnetlink_queue.h

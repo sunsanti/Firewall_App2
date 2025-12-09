@@ -66,8 +66,8 @@ include CMakeFiles/FirewallApp_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/FirewallApp_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/FirewallApp_autogen_timestamp_deps: /usr/lib/aarch64-linux-gnu/libQt6Core.so.6.4.2
 CMakeFiles/FirewallApp_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/FirewallApp_autogen_timestamp_deps: /usr/lib/aarch64-linux-gnu/libQt6Core.so.6.4.2
 CMakeFiles/FirewallApp_autogen_timestamp_deps: /usr/lib/aarch64-linux-gnu/libQt6Sql.so.6.4.2
 
 FirewallApp_autogen_timestamp_deps: CMakeFiles/FirewallApp_autogen_timestamp_deps

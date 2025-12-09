@@ -179,6 +179,30 @@ FirewallApp_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirewallApp.dir/build.make CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.s
 .PHONY : FirewallApp_autogen/mocs_compilation.cpp.s
 
+PacketParser.o: PacketParser.cpp.o
+.PHONY : PacketParser.o
+
+# target to build an object file
+PacketParser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirewallApp.dir/build.make CMakeFiles/FirewallApp.dir/PacketParser.cpp.o
+.PHONY : PacketParser.cpp.o
+
+PacketParser.i: PacketParser.cpp.i
+.PHONY : PacketParser.i
+
+# target to preprocess a source file
+PacketParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirewallApp.dir/build.make CMakeFiles/FirewallApp.dir/PacketParser.cpp.i
+.PHONY : PacketParser.cpp.i
+
+PacketParser.s: PacketParser.cpp.s
+.PHONY : PacketParser.s
+
+# target to generate assembly for a file
+PacketParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirewallApp.dir/build.make CMakeFiles/FirewallApp.dir/PacketParser.cpp.s
+.PHONY : PacketParser.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -289,6 +313,9 @@ help:
 	@echo "... FirewallApp_autogen/mocs_compilation.o"
 	@echo "... FirewallApp_autogen/mocs_compilation.i"
 	@echo "... FirewallApp_autogen/mocs_compilation.s"
+	@echo "... PacketParser.o"
+	@echo "... PacketParser.i"
+	@echo "... PacketParser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

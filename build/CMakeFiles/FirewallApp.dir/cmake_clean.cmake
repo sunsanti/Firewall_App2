@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "FirewallApp_autogen"
   "CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/FirewallApp.dir/PacketParser.cpp.o"
+  "CMakeFiles/FirewallApp.dir/PacketParser.cpp.o.d"
   "CMakeFiles/FirewallApp.dir/main.cpp.o"
   "CMakeFiles/FirewallApp.dir/main.cpp.o.d"
   "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o"

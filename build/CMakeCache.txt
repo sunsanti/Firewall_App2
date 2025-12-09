@@ -272,6 +272,12 @@ FirewallApp_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 FirewallApp_SOURCE_DIR:STATIC=/home/quanduong/Downloads/Firewall_App2
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
 QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
@@ -290,6 +296,12 @@ Qt6Sql_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/Qt6Sql
 
 //The directory containing a CMake configuration file for Qt6.
 Qt6_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/Qt6
+
+//Path to a library.
+pkgcfg_lib_NFQUEUE_netfilter_queue:FILEPATH=/usr/lib/aarch64-linux-gnu/libnetfilter_queue.so
+
+//Path to a library.
+pkgcfg_lib_NFQUEUE_nfnetlink:FILEPATH=/usr/lib/aarch64-linux-gnu/libnfnetlink.so
 
 
 ########################
@@ -475,12 +487,53 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.8.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding WrapAtomic
 FIND_PACKAGE_MESSAGE_DETAILS_WrapAtomic:INTERNAL=[1][v()]
 //Test HAVE_STDATOMIC
 HAVE_STDATOMIC:INTERNAL=1
+NFQUEUE_CFLAGS:INTERNAL=-I/usr/include
+NFQUEUE_CFLAGS_I:INTERNAL=
+NFQUEUE_CFLAGS_OTHER:INTERNAL=
+NFQUEUE_FOUND:INTERNAL=1
+NFQUEUE_INCLUDEDIR:INTERNAL=/usr/include
+NFQUEUE_INCLUDE_DIRS:INTERNAL=/usr/include
+NFQUEUE_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu;-lnetfilter_queue;-lnfnetlink
+NFQUEUE_LDFLAGS_OTHER:INTERNAL=
+NFQUEUE_LIBDIR:INTERNAL=/usr/lib/aarch64-linux-gnu
+NFQUEUE_LIBRARIES:INTERNAL=netfilter_queue;nfnetlink
+NFQUEUE_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu
+NFQUEUE_LIBS:INTERNAL=
+NFQUEUE_LIBS_L:INTERNAL=
+NFQUEUE_LIBS_OTHER:INTERNAL=
+NFQUEUE_LIBS_PATHS:INTERNAL=
+NFQUEUE_MODULE_NAME:INTERNAL=libnetfilter_queue
+NFQUEUE_PREFIX:INTERNAL=/usr
+NFQUEUE_STATIC_CFLAGS:INTERNAL=-I/usr/include
+NFQUEUE_STATIC_CFLAGS_I:INTERNAL=
+NFQUEUE_STATIC_CFLAGS_OTHER:INTERNAL=
+NFQUEUE_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include
+NFQUEUE_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu;-lnetfilter_queue;-lnfnetlink
+NFQUEUE_STATIC_LDFLAGS_OTHER:INTERNAL=
+NFQUEUE_STATIC_LIBDIR:INTERNAL=
+NFQUEUE_STATIC_LIBRARIES:INTERNAL=netfilter_queue;nfnetlink
+NFQUEUE_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu
+NFQUEUE_STATIC_LIBS:INTERNAL=
+NFQUEUE_STATIC_LIBS_L:INTERNAL=
+NFQUEUE_STATIC_LIBS_OTHER:INTERNAL=
+NFQUEUE_STATIC_LIBS_PATHS:INTERNAL=
+NFQUEUE_VERSION:INTERNAL=1.0.5
+NFQUEUE_libnetfilter_queue_INCLUDEDIR:INTERNAL=
+NFQUEUE_libnetfilter_queue_LIBDIR:INTERNAL=
+NFQUEUE_libnetfilter_queue_PREFIX:INTERNAL=
+NFQUEUE_libnetfilter_queue_VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Qt feature: aesni (from target Qt6::Core)
 QT_FEATURE_aesni:INTERNAL=OFF
 //Qt feature: alloca (from target Qt6::Core)
@@ -817,4 +870,11 @@ QT_FEATURE_zstd:INTERNAL=ON
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+__pkg_config_arguments_NFQUEUE:INTERNAL=REQUIRED;libnetfilter_queue
+__pkg_config_checked_NFQUEUE:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_NFQUEUE_netfilter_queue
+pkgcfg_lib_NFQUEUE_netfilter_queue-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_NFQUEUE_nfnetlink
+pkgcfg_lib_NFQUEUE_nfnetlink-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/aarch64-linux-gnu
 
