@@ -11,7 +11,7 @@
 #include <netinet/tcp.h>
 #include <netdb.h>
 #include <libnetfilter_queue/libnetfilter_queue.h>
-#include <iostream>
+#include <iostream> 
 #include <sys/socket.h>
 #include <unistd.h>
 
@@ -27,7 +27,7 @@ FirewallViewModel::FirewallViewModel(QObject* parent) : QObject(parent) {
 
 bool FirewallViewModel::connectDatabase() {
     m_db = QSqlDatabase::addDatabase("QPSQL");
-    m_db.setHostName("192.168.1.149");
+    m_db.setHostName("192.168.100.90");
     m_db.setPort(5432);
     m_db.setDatabaseName("firewall_db");
     m_db.setUserName("postgres");
