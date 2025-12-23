@@ -1,5 +1,0 @@
-/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/FirewallApp.dir
-/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/edit_cache.dir
-/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/rebuild_cache.dir
-/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/FirewallApp_autogen_timestamp_deps.dir
-/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles/FirewallApp_autogen.dir
