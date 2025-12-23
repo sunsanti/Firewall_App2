@@ -249,4 +249,22 @@ CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/qanystringview.h \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/qutf8stringview.h \
- /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringtokenizer.h
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringtokenizer.h \
+ /usr/include/netinet/ip.h /usr/include/netinet/in.h \
+ /usr/include/aarch64-linux-gnu/sys/socket.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/aarch64-linux-gnu/bits/socket.h \
+ /usr/include/aarch64-linux-gnu/bits/socket_type.h \
+ /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
+ /usr/include/aarch64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/aarch64-linux-gnu/asm/posix_types.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/aarch64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/netinet/ip6.h \
+ /usr/include/inttypes.h /usr/include/netinet/tcp.h

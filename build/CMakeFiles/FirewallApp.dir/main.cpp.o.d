@@ -333,6 +333,11 @@ CMakeFiles/FirewallApp.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstring.h \
  /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
  /home/quanduong/Downloads/Firewall_App2/PacketParser.h \
+ /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/qlist.h \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
  /usr/include/libnetfilter_queue/libnetfilter_queue.h \
  /usr/include/aarch64-linux-gnu/sys/time.h \
  /usr/include/libnfnetlink/libnfnetlink.h \

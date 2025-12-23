@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/quanduong/Downloads/Firewall_App2/build/FirewallApp_autogen/mocs_compilation.cpp" "CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o.d"
   "/home/quanduong/Downloads/Firewall_App2/PacketParser.cpp" "CMakeFiles/FirewallApp.dir/PacketParser.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/PacketParser.cpp.o.d"
   "/home/quanduong/Downloads/Firewall_App2/main.cpp" "CMakeFiles/FirewallApp.dir/main.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/main.cpp.o.d"
+  "/home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp" "CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o.d"
   "/home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp" "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o.d"
   "/home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp" "CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o.d"
   "/home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.cpp" "CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o" "gcc" "CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o.d"

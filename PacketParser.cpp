@@ -1,85 +1,12 @@
 #include "PacketParser.h"
 #include <QString>
 #include <cstdio>
+#include <netinet/ip.h>
+#include <netinet/ip6.h>
+#include <netinet/tcp.h>
+#include <cstring>
 
-// Detect version
-// bool PacketParser::isIPv4(const unsigned char* pkt) {
-//     return (pkt[14] >> 4) == 4;
-// }
 
-// bool PacketParser::isIPv6(const unsigned char* pkt) {
-//     return (pkt[14] >> 4) == 6;
-// }
-
-// // ---------------- IPv4 -----------------
-// int PacketParser::getIPv4HeaderLen(const unsigned char* pkt) {
-//     int ipHeaderStart = 14;
-//     return (pkt[ipHeaderStart] & 0x0F) * 4;
-// }
-
-// QString PacketParser::parseIPv4Src(const unsigned char* pkt) {
-//     int ip = 14;
-//     return QString("%1.%2.%3.%4")
-//         .arg(pkt[ip + 12]).arg(pkt[ip + 13])
-//         .arg(pkt[ip + 14]).arg(pkt[ip + 15]);
-// }
-
-// QString PacketParser::parseIPv4Dst(const unsigned char* pkt) {
-//     int ip = 14;
-//     return QString("%1.%2.%3.%4")
-//         .arg(pkt[ip + 16]).arg(pkt[ip + 17])
-//         .arg(pkt[ip + 18]).arg(pkt[ip + 19]);
-// }
-
-// int PacketParser::parseIPv4SrcPort(const unsigned char* pkt) {
-//     int ipLen = getIPv4HeaderLen(pkt);
-//     int tcp = 14 + ipLen;
-//     return (pkt[tcp] << 8) | pkt[tcp + 1];
-// }
-
-// int PacketParser::parseIPv4DstPort(const unsigned char* pkt) {
-//     int ipLen = getIPv4HeaderLen(pkt);
-//     int tcp = 14 + ipLen;
-//     return (pkt[tcp + 2] << 8) | pkt[tcp + 3];
-// }
-
-// // ---------------- IPv6 -----------------
-// QString PacketParser::parseIPv6Src(const unsigned char* pkt) {
-//     int base = 14 + 8; // phiên bản 6, src bắt đầu byte 8 trong IPv6 header
-//     char buf[40];
-//     sprintf(buf,
-//         "%02x%02x:%02x%02x:%02x%02x:%02x%02x:"
-//         "%02x%02x:%02x%02x:%02x%02x:%02x%02x",
-//         pkt[base], pkt[base+1], pkt[base+2], pkt[base+3],
-//         pkt[base+4], pkt[base+5], pkt[base+6], pkt[base+7],
-//         pkt[base+8], pkt[base+9], pkt[base+10], pkt[base+11],
-//         pkt[base+12], pkt[base+13], pkt[base+14], pkt[base+15]);
-//     return QString(buf);
-// }
-
-// QString PacketParser::parseIPv6Dst(const unsigned char* pkt) {
-//     int base = 14 + 24; // dst bắt đầu byte 24 trong IPv6 header
-//     char buf[40];
-//     sprintf(buf,
-//         "%02x%02x:%02x%02x:%02x%02x:%02x%02x:"
-//         "%02x%02x:%02x%02x:%02x%02x:%02x%02x",
-//         pkt[base], pkt[base+1], pkt[base+2], pkt[base+3],
-//         pkt[base+4], pkt[base+5], pkt[base+6], pkt[base+7],
-//         pkt[base+8], pkt[base+9], pkt[base+10], pkt[base+11],
-//         pkt[base+12], pkt[base+13], pkt[base+14], pkt[base+15]);
-//     return QString(buf);
-// }
-
-// int PacketParser::parseIPv6SrcPort(const unsigned char* pkt) {
-//     int tcp = 14 + 40; // after IPv6 header
-//     return (pkt[tcp] << 8) | pkt[tcp + 1];
-// }
-
-// int PacketParser::parseIPv6DstPort(const unsigned char* pkt) {
-//     int tcp = 14 + 40;
-//     return (pkt[tcp + 2] << 8) | pkt[tcp + 3];
-// }
-// Detect version trực tiếp từ đầu gói NFQUEUE
 bool PacketParser::isIPv4(const unsigned char* pkt) {
     return (pkt[0] >> 4) == 4;
 }
@@ -176,6 +103,28 @@ bool PacketParser::isTCP_RST(const unsigned char* data)
     }
 
     return false;
+}
+
+int PacketParser::getTCPFlags(const unsigned char* pkt) {
+    if (isIPv4(pkt)) {
+        struct iphdr* iph = (struct iphdr*)pkt;
+        if (iph->protocol != IPPROTO_TCP) return 0;
+
+        struct tcphdr* tcph = (struct tcphdr*)(pkt + iph->ihl * 4);
+        return tcph->syn << 1 | tcph->ack << 4 | tcph->rst << 2
+               | tcph->fin | tcph->psh << 3 | tcph->urg << 5;
+    } 
+    else if (isIPv6(pkt)) {
+        struct ip6_hdr* ip6h = (struct ip6_hdr*)pkt;
+        // Kiểm tra next header = TCP (6)
+        if (ip6h->ip6_nxt != IPPROTO_TCP) return 0;
+
+        struct tcphdr* tcph = (struct tcphdr*)(pkt + sizeof(struct ip6_hdr));
+        return tcph->syn << 1 | tcph->ack << 4 | tcph->rst << 2
+               | tcph->fin | tcph->psh << 3 | tcph->urg << 5;
+    }
+
+    return 0; // không phải TCP
 }
 
 

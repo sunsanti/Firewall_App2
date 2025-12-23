@@ -131,10 +131,24 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.cpp -o CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.s
 
+CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o: CMakeFiles/FirewallApp.dir/flags.make
+CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o: /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp
+CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o: CMakeFiles/FirewallApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o -MF CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o.d -o CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o -c /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp
+
+CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp > CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.i
+
+CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp -o CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.s
+
 CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: CMakeFiles/FirewallApp.dir/flags.make
 CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: /home/quanduong/Downloads/Firewall_App2/PacketParser.cpp
 CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: CMakeFiles/FirewallApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FirewallApp.dir/PacketParser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FirewallApp.dir/PacketParser.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FirewallApp.dir/PacketParser.cpp.o -MF CMakeFiles/FirewallApp.dir/PacketParser.cpp.o.d -o CMakeFiles/FirewallApp.dir/PacketParser.cpp.o -c /home/quanduong/Downloads/Firewall_App2/PacketParser.cpp
 
 CMakeFiles/FirewallApp.dir/PacketParser.cpp.i: cmake_force
@@ -148,7 +162,7 @@ CMakeFiles/FirewallApp.dir/PacketParser.cpp.s: cmake_force
 CMakeFiles/FirewallApp.dir/main.cpp.o: CMakeFiles/FirewallApp.dir/flags.make
 CMakeFiles/FirewallApp.dir/main.cpp.o: /home/quanduong/Downloads/Firewall_App2/main.cpp
 CMakeFiles/FirewallApp.dir/main.cpp.o: CMakeFiles/FirewallApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FirewallApp.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FirewallApp.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FirewallApp.dir/main.cpp.o -MF CMakeFiles/FirewallApp.dir/main.cpp.o.d -o CMakeFiles/FirewallApp.dir/main.cpp.o -c /home/quanduong/Downloads/Firewall_App2/main.cpp
 
 CMakeFiles/FirewallApp.dir/main.cpp.i: cmake_force
@@ -165,6 +179,7 @@ FirewallApp_OBJECTS = \
 "CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o" \
 "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o" \
 "CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o" \
+"CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o" \
 "CMakeFiles/FirewallApp.dir/PacketParser.cpp.o" \
 "CMakeFiles/FirewallApp.dir/main.cpp.o"
 
@@ -175,13 +190,14 @@ FirewallApp: CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp
 FirewallApp: CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o
 FirewallApp: CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o
 FirewallApp: CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o
+FirewallApp: CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o
 FirewallApp: CMakeFiles/FirewallApp.dir/PacketParser.cpp.o
 FirewallApp: CMakeFiles/FirewallApp.dir/main.cpp.o
 FirewallApp: CMakeFiles/FirewallApp.dir/build.make
 FirewallApp: /usr/lib/aarch64-linux-gnu/libQt6Sql.so.6.4.2
 FirewallApp: /usr/lib/aarch64-linux-gnu/libQt6Core.so.6.4.2
 FirewallApp: CMakeFiles/FirewallApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable FirewallApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/quanduong/Downloads/Firewall_App2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable FirewallApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FirewallApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -57,6 +57,7 @@ add_executable(FirewallApp
     models/FirewallRule.cpp
     models/FirewallPacket.cpp
     viewmodels/FirewallViewModel.cpp
+    models/DNSTupleManager.cpp
     PacketParser.cpp        
     main.cpp
 )

@@ -5,11 +5,31 @@
 #include "FirewallRule.h"
 #include "FirewallPacket.h"
 #include "PacketParser.h"
+#include "DNSTupleManager.h"
 #include <libnetfilter_queue/libnetfilter_queue.h>
+#include <QReadWriteLock>
 
 class FirewallViewModel : public QObject {
     Q_OBJECT
 public:
+    struct DnsTuple {
+    QString srcIP;
+    QString dstIP;
+    int srcPort;
+    int dstPort;
+    int protocol; // IPPROTO_UDP
+    DnsTuple(const QString& sIP, const QString& dIP, int sPort, int dPort, int proto)
+        : srcIP(sIP), dstIP(dIP), srcPort(sPort),
+          dstPort(dPort), protocol(static_cast<quint8>(proto)) {}
+
+};
+    void addTuple(const DnsTuple &tuple);
+
+    bool matchAnyTuple(const QString &packetSrcIP, const QString &packetDstIP,
+                   int packetSrcPort, int packetDstPort, int protocol);
+
+    QString inferState(int protocol,const u_char* pktData,bool ipv6);
+
     explicit FirewallViewModel(QObject* parent = nullptr);
 
     // Database interaction
@@ -20,8 +40,8 @@ public:
     QVector<FirewallRule> loadRules();
 
     // Packet checking
-    QString checkPacketIncoming(const FirewallPacket &packet, QSqlDatabase &db, bool ipv6 = false);
-    QString checkPacketOutgoing(const FirewallPacket &packet, QSqlDatabase &db, bool ipv6 = false);
+    QString checkPacketIncoming(const FirewallPacket &packet, bool ipv6 = false);
+    QString checkPacketOutgoing(const FirewallPacket &packet, bool ipv6 = false);
 
     // NFQUEUE callbacks
     static int cb_input(struct nfq_q_handle* qh, struct nfgenmsg*, struct nfq_data* nfa, void* data);
@@ -38,12 +58,15 @@ public:
 private:
     QSqlDatabase m_db;
 
-    bool connectDatabase();
-
+    QSqlDatabase dbForThread();
+    DNSTupleManager dnsManager;
     // Process packet data
     int processIncoming(struct nfq_data* nfa, struct nfq_q_handle* qh);
     int processOutgoing(struct nfq_data* nfa, struct nfq_q_handle* qh);
 
     // Helpers
     void logPacket(const QString &direction, const QString &ip, int port, bool ipv6, bool drop);
+
+    QVector<FirewallRule> m_rulesCache;
+    QReadWriteLock m_rulesLock;
 };

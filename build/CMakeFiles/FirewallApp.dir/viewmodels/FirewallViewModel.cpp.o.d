@@ -293,6 +293,11 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstring.h \
  /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
  /home/quanduong/Downloads/Firewall_App2/PacketParser.h \
+ /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/qlist.h \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
  /usr/include/libnetfilter_queue/libnetfilter_queue.h \
  /usr/include/aarch64-linux-gnu/sys/time.h \
  /usr/include/libnfnetlink/libnfnetlink.h \
@@ -360,9 +365,12 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: \
  /usr/include/rpc/netdb.h \
  /usr/include/aarch64-linux-gnu/bits/types/sigevent_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/aarch64-linux-gnu/bits/netdb.h /usr/include/c++/13/iostream \
- /usr/include/c++/13/ostream /usr/include/c++/13/ios \
- /usr/include/c++/13/bits/basic_ios.h \
+ /usr/include/aarch64-linux-gnu/bits/netdb.h \
+ /usr/include/linux/netfilter/nfnetlink_conntrack.h \
+ /usr/include/linux/netfilter/nfnetlink.h \
+ /usr/include/linux/netfilter/nf_conntrack_common.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
+ /usr/include/c++/13/ios /usr/include/c++/13/bits/basic_ios.h \
  /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
  /usr/include/wctype.h /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h \
@@ -377,4 +385,14 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h
+ /usr/include/linux/close_range.h \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/QThread \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/qthread.h \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/aarch64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/c++/13/future /usr/include/c++/13/mutex \
+ /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/bits/unique_lock.h \
+ /usr/include/c++/13/condition_variable \
+ /usr/include/c++/13/bits/atomic_futex.h \
+ /usr/include/c++/13/bits/std_thread.h

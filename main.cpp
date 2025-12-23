@@ -45,6 +45,7 @@ int main(int argc, char *argv[]) {
     // ---------- 2. TẠO QUEUE INPUT (queue 0) ----------
     struct nfq_q_handle* q_input =
         nfq_create_queue(h, 0, &FirewallViewModel::cb_input, &vm);
+        nfq_set_queue_maxlen(q_input, 8192);
 
     if (!q_input) {
         cout << "Error: cannot create input queue\n";
@@ -56,6 +57,7 @@ int main(int argc, char *argv[]) {
     // ---------- 3. TẠO QUEUE OUTPUT (queue 1) ----------
     struct nfq_q_handle* q_output =
         nfq_create_queue(h, 1, &FirewallViewModel::cb_output, &vm);
+        nfq_set_queue_maxlen(q_output, 8192);
 
     if (!q_output) {
         cout << "Error: cannot create output queue\n";
@@ -66,6 +68,10 @@ int main(int argc, char *argv[]) {
 
     // ---------- 4. NHẬN PACKET TỪ KERNEL ----------
     int fd = nfq_fd(h);
+    int rcvbuf = 8 * 1024 * 1024; // 8MB
+if (setsockopt(fd, SOL_SOCKET, SO_RCVBUF, &rcvbuf, sizeof(rcvbuf)) < 0) {
+    perror("setsockopt(SO_RCVBUF) failed");
+}
     char buf[8192] __attribute__((aligned));
 
     cout << "Firewall is running..." << endl;

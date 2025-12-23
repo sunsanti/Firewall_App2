@@ -1,15 +1,7 @@
-/home/quanduong/Downloads/Firewall_App2/build/FirewallApp_autogen/RVZ4ISEY7V/moc_FirewallViewModel.cpp: /home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.h \
+/home/quanduong/Downloads/Firewall_App2/build/FirewallApp_autogen/IVK4DJNV27/moc_DNSTupleManager.cpp: /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/build/FirewallApp_autogen/moc_predefs.h \
-  /home/quanduong/Downloads/Firewall_App2/PacketParser.h \
-  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
-  /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
-  /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.h \
   /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
   /usr/include/aarch64-linux-gnu/asm/errno.h \
-  /usr/include/aarch64-linux-gnu/asm/posix_types.h \
-  /usr/include/aarch64-linux-gnu/asm/socket.h \
-  /usr/include/aarch64-linux-gnu/asm/sockios.h \
-  /usr/include/aarch64-linux-gnu/asm/types.h \
   /usr/include/aarch64-linux-gnu/asm/unistd.h \
   /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/aarch64-linux-gnu/bits/byteswap.h \
@@ -36,9 +28,6 @@
   /usr/include/aarch64-linux-gnu/bits/sched.h \
   /usr/include/aarch64-linux-gnu/bits/select.h \
   /usr/include/aarch64-linux-gnu/bits/setjmp.h \
-  /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
-  /usr/include/aarch64-linux-gnu/bits/socket.h \
-  /usr/include/aarch64-linux-gnu/bits/socket_type.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
@@ -64,9 +53,7 @@
   /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
@@ -100,7 +87,6 @@
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
-  /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qanystringview.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qarraydata.h \
@@ -166,31 +152,17 @@
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qtypeinfo.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qutf8stringview.h \
-  /usr/include/aarch64-linux-gnu/qt6/QtCore/qvector.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qversiontagging.h \
-  /usr/include/aarch64-linux-gnu/qt6/QtSql/QSqlDatabase \
-  /usr/include/aarch64-linux-gnu/qt6/QtSql/qsqldatabase.h \
-  /usr/include/aarch64-linux-gnu/qt6/QtSql/qtsql-config.h \
-  /usr/include/aarch64-linux-gnu/qt6/QtSql/qtsqlexports.h \
-  /usr/include/aarch64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
   /usr/include/aarch64-linux-gnu/sys/cdefs.h \
   /usr/include/aarch64-linux-gnu/sys/select.h \
-  /usr/include/aarch64-linux-gnu/sys/socket.h \
   /usr/include/aarch64-linux-gnu/sys/syscall.h \
-  /usr/include/aarch64-linux-gnu/sys/time.h \
   /usr/include/aarch64-linux-gnu/sys/types.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/socket.h \
-  /usr/include/asm-generic/sockios.h \
-  /usr/include/asm-generic/types.h \
   /usr/include/asm-generic/unistd.h \
   /usr/include/assert.h \
-  /usr/include/byteswap.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/array \
   /usr/include/c++/13/atomic \
@@ -365,20 +337,9 @@
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
-  /usr/include/libnetfilter_queue/libnetfilter_queue.h \
-  /usr/include/libnetfilter_queue/linux_nfnetlink_queue.h \
-  /usr/include/libnfnetlink/libnfnetlink.h \
-  /usr/include/libnfnetlink/linux_nfnetlink.h \
-  /usr/include/libnfnetlink/linux_nfnetlink_compat.h \
   /usr/include/limits.h \
-  /usr/include/linux/const.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
-  /usr/include/linux/netlink.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/socket.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \

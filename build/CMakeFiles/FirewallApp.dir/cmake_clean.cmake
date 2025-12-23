@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FirewallApp.dir/PacketParser.cpp.o.d"
   "CMakeFiles/FirewallApp.dir/main.cpp.o"
   "CMakeFiles/FirewallApp.dir/main.cpp.o.d"
+  "CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o"
+  "CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o.d"
   "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o"
   "CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o.d"
   "CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o"

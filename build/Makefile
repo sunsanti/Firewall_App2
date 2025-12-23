@@ -227,6 +227,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirewallApp.dir/build.make CMakeFiles/FirewallApp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+models/DNSTupleManager.o: models/DNSTupleManager.cpp.o
+.PHONY : models/DNSTupleManager.o
+
+# target to build an object file
+models/DNSTupleManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirewallApp.dir/build.make CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o
+.PHONY : models/DNSTupleManager.cpp.o
+
+models/DNSTupleManager.i: models/DNSTupleManager.cpp.i
+.PHONY : models/DNSTupleManager.i
+
+# target to preprocess a source file
+models/DNSTupleManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirewallApp.dir/build.make CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.i
+.PHONY : models/DNSTupleManager.cpp.i
+
+models/DNSTupleManager.s: models/DNSTupleManager.cpp.s
+.PHONY : models/DNSTupleManager.s
+
+# target to generate assembly for a file
+models/DNSTupleManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirewallApp.dir/build.make CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.s
+.PHONY : models/DNSTupleManager.cpp.s
+
 models/FirewallPacket.o: models/FirewallPacket.cpp.o
 .PHONY : models/FirewallPacket.o
 
@@ -319,6 +343,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... models/DNSTupleManager.o"
+	@echo "... models/DNSTupleManager.i"
+	@echo "... models/DNSTupleManager.s"
 	@echo "... models/FirewallPacket.o"
 	@echo "... models/FirewallPacket.i"
 	@echo "... models/FirewallPacket.s"

@@ -9,6 +9,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -108,7 +110,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -155,6 +159,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -451,100 +456,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -553,8 +483,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -569,6 +497,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -668,7 +598,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -715,6 +647,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -1011,100 +944,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -1113,8 +971,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -1129,6 +985,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -1228,7 +1086,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -1275,6 +1135,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -1571,100 +1432,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -1673,8 +1459,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -1689,6 +1473,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -1788,7 +1574,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -1835,6 +1623,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -2131,100 +1920,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -2233,8 +1947,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -2249,6 +1961,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -2348,7 +2062,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -2395,6 +2111,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -2691,100 +2408,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -2793,8 +2435,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -2809,6 +2449,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -2908,7 +2550,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -2955,6 +2599,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -3251,100 +2896,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -3353,8 +2923,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -3369,6 +2937,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -3468,7 +3038,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -3515,6 +3087,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -3811,100 +3384,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -3913,8 +3411,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -3929,6 +3425,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -4028,7 +3526,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -4075,6 +3575,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -4371,100 +3872,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -4473,8 +3899,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -4489,6 +3913,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -4588,7 +4014,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -4635,6 +4063,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -4931,100 +4360,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -5033,8 +4387,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -5049,6 +4401,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -5148,7 +4502,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -5195,6 +4551,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -5491,100 +4848,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -5593,8 +4875,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -5609,6 +4889,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -5708,7 +4990,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -5755,6 +5039,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -6051,100 +5336,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -6153,8 +5363,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -6169,6 +5377,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -6268,7 +5478,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -6315,6 +5527,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -6611,100 +5824,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -6713,8 +5851,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -6729,6 +5865,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -6828,7 +5966,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -6875,6 +6015,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -7171,100 +6312,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -7273,8 +6339,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -7289,6 +6353,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FirewallApp_autogen/moc_predefs.h \
   /home/quanduong/Downloads/Firewall_App2/main.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp \
@@ -7388,7 +6454,9 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -7435,6 +6503,7 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -7731,100 +6800,25 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
   /usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
@@ -7833,8 +6827,6 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
   /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
@@ -7844,6 +6836,8 @@ FirewallApp_autogen/timestamp: /home/quanduong/Downloads/Firewall_App2/CMakeList
 
 CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o: FirewallApp_autogen/mocs_compilation.cpp \
   /home/quanduong/Downloads/Firewall_App2/PacketParser.h \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
+  FirewallApp_autogen/IVK4DJNV27/moc_DNSTupleManager.cpp \
   /home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.h \
   FirewallApp_autogen/RVZ4ISEY7V/moc_FirewallViewModel.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
@@ -7939,7 +6933,9 @@ CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o: FirewallA
   /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -7986,6 +6982,7 @@ CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o: FirewallA
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -8222,7 +7219,11 @@ CMakeFiles/FirewallApp.dir/FirewallApp_autogen/mocs_compilation.cpp.o: FirewallA
 
 CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: /home/quanduong/Downloads/Firewall_App2/PacketParser.cpp \
   /home/quanduong/Downloads/Firewall_App2/PacketParser.h \
+  /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
   /usr/include/aarch64-linux-gnu/asm/errno.h \
+  /usr/include/aarch64-linux-gnu/asm/posix_types.h \
+  /usr/include/aarch64-linux-gnu/asm/socket.h \
+  /usr/include/aarch64-linux-gnu/asm/sockios.h \
   /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/aarch64-linux-gnu/bits/byteswap.h \
   /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
@@ -8234,6 +7235,7 @@ CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: /home/quanduong/Downloads/Firewal
   /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
   /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
   /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
+  /usr/include/aarch64-linux-gnu/bits/in.h \
   /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
   /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
   /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -8249,6 +7251,9 @@ CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: /home/quanduong/Downloads/Firewal
   /usr/include/aarch64-linux-gnu/bits/sched.h \
   /usr/include/aarch64-linux-gnu/bits/select.h \
   /usr/include/aarch64-linux-gnu/bits/setjmp.h \
+  /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
+  /usr/include/aarch64-linux-gnu/bits/socket.h \
+  /usr/include/aarch64-linux-gnu/bits/socket_type.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
@@ -8278,7 +7283,9 @@ CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: /home/quanduong/Downloads/Firewal
   /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
@@ -8349,10 +7356,15 @@ CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: /home/quanduong/Downloads/Firewal
   /usr/include/aarch64-linux-gnu/sys/cdefs.h \
   /usr/include/aarch64-linux-gnu/sys/select.h \
   /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
+  /usr/include/aarch64-linux-gnu/sys/socket.h \
   /usr/include/aarch64-linux-gnu/sys/types.h \
   /usr/include/alloca.h \
+  /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/asm-generic/sockios.h \
   /usr/include/assert.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/array \
@@ -8501,9 +7513,16 @@ CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: /home/quanduong/Downloads/Firewal
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/inttypes.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
   /usr/include/locale.h \
   /usr/include/math.h \
+  /usr/include/netinet/in.h \
+  /usr/include/netinet/ip.h \
+  /usr/include/netinet/ip6.h \
+  /usr/include/netinet/tcp.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -8521,6 +7540,7 @@ CMakeFiles/FirewallApp.dir/PacketParser.cpp.o: /home/quanduong/Downloads/Firewal
 
 CMakeFiles/FirewallApp.dir/main.cpp.o: /home/quanduong/Downloads/Firewall_App2/main.cpp \
   /home/quanduong/Downloads/Firewall_App2/PacketParser.h \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.h \
   /home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.h \
@@ -8624,7 +7644,9 @@ CMakeFiles/FirewallApp.dir/main.cpp.o: /home/quanduong/Downloads/Firewall_App2/m
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QCoreApplication \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -8680,6 +7702,7 @@ CMakeFiles/FirewallApp.dir/main.cpp.o: /home/quanduong/Downloads/Firewall_App2/m
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -8937,6 +7960,346 @@ CMakeFiles/FirewallApp.dir/main.cpp.o: /home/quanduong/Downloads/Firewall_App2/m
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/syslimits.h
+
+CMakeFiles/FirewallApp.dir/models/DNSTupleManager.cpp.o: /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
+  /usr/include/aarch64-linux-gnu/asm/errno.h \
+  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
+  /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
+  /usr/include/aarch64-linux-gnu/bits/endian.h \
+  /usr/include/aarch64-linux-gnu/bits/endianness.h \
+  /usr/include/aarch64-linux-gnu/bits/errno.h \
+  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
+  /usr/include/aarch64-linux-gnu/bits/floatn.h \
+  /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
+  /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
+  /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
+  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/aarch64-linux-gnu/bits/locale.h \
+  /usr/include/aarch64-linux-gnu/bits/long-double.h \
+  /usr/include/aarch64-linux-gnu/bits/math-vector.h \
+  /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
+  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/aarch64-linux-gnu/bits/sched.h \
+  /usr/include/aarch64-linux-gnu/bits/select.h \
+  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/aarch64-linux-gnu/bits/time.h \
+  /usr/include/aarch64-linux-gnu/bits/time64.h \
+  /usr/include/aarch64-linux-gnu/bits/timesize.h \
+  /usr/include/aarch64-linux-gnu/bits/timex.h \
+  /usr/include/aarch64-linux-gnu/bits/types.h \
+  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
+  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
+  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar.h \
+  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
+  /usr/include/aarch64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h \
+  /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h \
+  /usr/include/aarch64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h \
+  /usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h \
+  /usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h \
+  /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
+  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qanystringview.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qarraydata.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qarraydataops.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qatomic.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qbasicatomic.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qbindingstorage.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearray.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearraylist.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearrayview.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qchar.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qcompare.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qcompare_impl.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qcompilerdetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qconfig.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qcontainerfwd.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qdatastream.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qflags.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qforeach.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qgenericatomic.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qglobal.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qglobalstatic.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qiodevicebase.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qiterable.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qiterator.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qlist.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qlogging.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qmath.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qmetacontainer.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qmetatype.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qnamespace.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qnumeric.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qobject.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qobject_impl.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstring.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringfwd.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringlist.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringliteral.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringmatcher.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringtokenizer.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringview.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qsysinfo.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qsystemdetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qtconfigmacros.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qtcore-config.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qtcoreexports.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qtmetamacros.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qtypeinfo.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qutf8stringview.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qversiontagging.h \
+  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
+  /usr/include/aarch64-linux-gnu/sys/select.h \
+  /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
+  /usr/include/aarch64-linux-gnu/sys/types.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/assert.h \
+  /usr/include/c++/13/algorithm \
+  /usr/include/c++/13/array \
+  /usr/include/c++/13/atomic \
+  /usr/include/c++/13/backward/auto_ptr.h \
+  /usr/include/c++/13/backward/binders.h \
+  /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/align.h \
+  /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocated_ptr.h \
+  /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/atomic_base.h \
+  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/13/bits/basic_string.h \
+  /usr/include/c++/13/bits/basic_string.tcc \
+  /usr/include/c++/13/bits/char_traits.h \
+  /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/concept_check.h \
+  /usr/include/c++/13/bits/cpp_type_traits.h \
+  /usr/include/c++/13/bits/cxxabi_forced.h \
+  /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
+  /usr/include/c++/13/bits/erase_if.h \
+  /usr/include/c++/13/bits/exception.h \
+  /usr/include/c++/13/bits/exception_defines.h \
+  /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/functexcept.h \
+  /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
+  /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/list.tcc \
+  /usr/include/c++/13/bits/locale_classes.h \
+  /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/localefwd.h \
+  /usr/include/c++/13/bits/memory_resource.h \
+  /usr/include/c++/13/bits/memoryfwd.h \
+  /usr/include/c++/13/bits/move.h \
+  /usr/include/c++/13/bits/nested_exception.h \
+  /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/ostream_insert.h \
+  /usr/include/c++/13/bits/parse_numbers.h \
+  /usr/include/c++/13/bits/postypes.h \
+  /usr/include/c++/13/bits/predefined_ops.h \
+  /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/range_access.h \
+  /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/shared_ptr.h \
+  /usr/include/c++/13/bits/shared_ptr_atomic.h \
+  /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/std_function.h \
+  /usr/include/c++/13/bits/stl_algo.h \
+  /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
+  /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_heap.h \
+  /usr/include/c++/13/bits/stl_iterator.h \
+  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_list.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
+  /usr/include/c++/13/bits/stl_numeric.h \
+  /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_relops.h \
+  /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/stream_iterator.h \
+  /usr/include/c++/13/bits/streambuf.tcc \
+  /usr/include/c++/13/bits/streambuf_iterator.h \
+  /usr/include/c++/13/bits/string_view.tcc \
+  /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unique_ptr.h \
+  /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/uses_allocator.h \
+  /usr/include/c++/13/bits/uses_allocator_args.h \
+  /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cctype \
+  /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/chrono \
+  /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cmath \
+  /usr/include/c++/13/compare \
+  /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/cstdint \
+  /usr/include/c++/13/cstdio \
+  /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
+  /usr/include/c++/13/ctime \
+  /usr/include/c++/13/cwchar \
+  /usr/include/c++/13/debug/assertions.h \
+  /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/exception \
+  /usr/include/c++/13/ext/aligned_buffer.h \
+  /usr/include/c++/13/ext/alloc_traits.h \
+  /usr/include/c++/13/ext/atomicity.h \
+  /usr/include/c++/13/ext/concurrence.h \
+  /usr/include/c++/13/ext/numeric_traits.h \
+  /usr/include/c++/13/ext/string_conversions.h \
+  /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/functional \
+  /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iterator \
+  /usr/include/c++/13/limits \
+  /usr/include/c++/13/list \
+  /usr/include/c++/13/map \
+  /usr/include/c++/13/memory \
+  /usr/include/c++/13/new \
+  /usr/include/c++/13/numeric \
+  /usr/include/c++/13/optional \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/13/pstl/glue_memory_defs.h \
+  /usr/include/c++/13/pstl/glue_numeric_defs.h \
+  /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/ratio \
+  /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
+  /usr/include/c++/13/streambuf \
+  /usr/include/c++/13/string \
+  /usr/include/c++/13/string_view \
+  /usr/include/c++/13/system_error \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
+  /usr/include/c++/13/tuple \
+  /usr/include/c++/13/type_traits \
+  /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/utility \
+  /usr/include/c++/13/variant \
+  /usr/include/c++/13/vector \
+  /usr/include/c++/13/version \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
+  /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/FirewallApp.dir/models/FirewallPacket.cpp.o: /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.cpp \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
@@ -9538,6 +8901,7 @@ CMakeFiles/FirewallApp.dir/models/FirewallRule.cpp.o: /home/quanduong/Downloads/
 
 CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.cpp \
   /home/quanduong/Downloads/Firewall_App2/PacketParser.h \
+  /home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h \
   /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.h \
   /home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.h \
@@ -9653,8 +9017,11 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QDebug \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QList \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QString \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/QThread \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qanystringview.h \
@@ -9679,7 +9046,9 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qdatastream.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qdebug.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qflags.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qforeach.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qgenericatomic.h \
@@ -9704,6 +9073,7 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -9728,6 +9098,7 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qtcore-config.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qtcoreexports.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qtextstream.h \
+  /usr/include/aarch64-linux-gnu/qt6/QtCore/qthread.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qtypeinfo.h \
   /usr/include/aarch64-linux-gnu/qt6/QtCore/qutf8stringview.h \
@@ -9775,6 +9146,7 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/atomic_base.h \
+  /usr/include/c++/13/bits/atomic_futex.h \
   /usr/include/c++/13/bits/atomic_lockfree_defines.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
@@ -9827,6 +9199,8 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_function.h \
+  /usr/include/c++/13/bits/std_mutex.h \
+  /usr/include/c++/13/bits/std_thread.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
@@ -9853,6 +9227,7 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
@@ -9865,6 +9240,7 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
   /usr/include/c++/13/compare \
+  /usr/include/c++/13/condition_variable \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -9884,6 +9260,7 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
   /usr/include/c++/13/functional \
+  /usr/include/c++/13/future \
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
@@ -9894,6 +9271,7 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/c++/13/list \
   /usr/include/c++/13/map \
   /usr/include/c++/13/memory \
+  /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numeric \
   /usr/include/c++/13/optional \
@@ -9951,6 +9329,9 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
   /usr/include/linux/libc-compat.h \
   /usr/include/linux/limits.h \
   /usr/include/linux/netfilter.h \
+  /usr/include/linux/netfilter/nf_conntrack_common.h \
+  /usr/include/linux/netfilter/nfnetlink.h \
+  /usr/include/linux/netfilter/nfnetlink_conntrack.h \
   /usr/include/linux/netlink.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/socket.h \
@@ -9987,27 +9368,43 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
 
 /usr/include/rpc/netdb.h:
 
-/usr/include/netinet/ip6.h:
+/usr/include/linux/netfilter/nfnetlink_conntrack.h:
 
-/usr/include/netinet/ip.h:
-
-/usr/include/netinet/in.h:
+/usr/include/linux/netfilter/nf_conntrack_common.h:
 
 /usr/include/linux/netfilter.h:
 
 /usr/include/linux/libc-compat.h:
 
-/usr/include/inttypes.h:
+/usr/include/linux/close_range.h:
+
+/usr/include/c++/13/mutex:
+
+/usr/include/c++/13/future:
+
+/usr/include/c++/13/bits/std_thread.h:
+
+/usr/include/c++/13/bits/atomic_futex.h:
 
 /usr/include/arpa/inet.h:
+
+/usr/include/c++/13/condition_variable:
 
 /usr/include/aarch64-linux-gnu/qt6/QtSql/QSqlError:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qvariant.h:
 
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qthread.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qelapsedtimer.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/QThread:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/QDebug:
+
 /usr/include/aarch64-linux-gnu/bits/netdb.h:
 
-/usr/include/aarch64-linux-gnu/bits/in.h:
+/usr/include/aarch64-linux-gnu/asm/byteorder.h:
 
 /usr/lib/gcc/aarch64-linux-gnu/13/include/limits.h:
 
@@ -10023,92 +9420,6 @@ CMakeFiles/FirewallApp.dir/viewmodels/FirewallViewModel.cpp.o: /home/quanduong/D
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h:
 
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qsharedpointer.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qshareddata_impl.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qshareddata.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qset.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qmap.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qhash.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qeventloop.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qdebug.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qcoreapplication.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qcontiguouscache.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/QCoreApplication:
-
-/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:
-
-/usr/include/c++/13/version:
-
-/usr/include/c++/13/stdlib.h:
-
-/usr/include/c++/13/pstl/pstl_config.h:
-
-/usr/include/c++/13/ctime:
-
-/usr/include/math.h:
-
-/usr/include/c++/13/cstdio:
-
-/usr/include/c++/13/bits/hashtable_policy.h:
-
-/usr/include/c++/13/bits/chrono.h:
-
-/usr/include/aarch64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/aarch64-linux-gnu/bits/math-vector.h:
-
-/usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/aarch64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/aarch64-linux-gnu/bits/flt-eval-method.h:
-
-FirewallApp_autogen/RVZ4ISEY7V/moc_FirewallViewModel.cpp:
-
-/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake:
-
-/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake:
-
-/usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake:
-
-/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:
-
-/usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake:
-
-/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:
-
-/usr/share/cmake-3.28/Modules/FindThreads.cmake:
-
-/usr/share/cmake-3.28/Modules/FindPkgConfig.cmake:
-
-/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/QDebug:
-
-/usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
-
 /usr/include/c++/13/bits/ostream.tcc:
 
 /usr/include/aarch64-linux-gnu/sys/cdefs.h:
@@ -10121,21 +9432,7 @@ FirewallApp_autogen/RVZ4ISEY7V/moc_FirewallViewModel.cpp:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringtokenizer.h:
 
-/usr/include/aarch64-linux-gnu/bits/uio_lim.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
-
 /usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
-/usr/include/aarch64-linux-gnu/bits/endian.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qarraydata.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qcoreevent.h:
-
-/usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c:
 
 /usr/include/c++/13/bits/erase_if.h:
 
@@ -10148,8 +9445,6 @@ FirewallApp_autogen/RVZ4ISEY7V/moc_FirewallViewModel.cpp:
 /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in:
 
 /usr/include/c++/13/bits/c++0x_warning.h:
 
@@ -10193,6 +9488,10 @@ FirewallApp_autogen/RVZ4ISEY7V/moc_FirewallViewModel.cpp:
 
 /usr/include/aarch64-linux-gnu/sys/select.h:
 
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/linux/netfilter/nfnetlink.h:
+
 /usr/lib/aarch64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
 
 /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:
@@ -10219,19 +9518,9 @@ FirewallApp_autogen/RVZ4ISEY7V/moc_FirewallViewModel.cpp:
 
 /usr/include/c++/13/optional:
 
-/usr/include/c++/13/bits/postypes.h:
-
 /usr/include/c++/13/bits/node_handle.h:
 
-/usr/include/c++/13/ratio:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qutf8stringview.h:
-
 /usr/include/aarch64-linux-gnu/bits/confname.h:
-
-/usr/include/linux/close_range.h:
-
-/usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qtmetamacros.h:
 
@@ -10253,13 +9542,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/13/bit:
 
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qtconfigmacros.h:
+
 /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringlist.h:
-
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qstringalgorithms.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
 
@@ -10271,17 +9558,13 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake:
-
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qobjectdefs.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
 
-/usr/include/aarch64-linux-gnu/asm/byteorder.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
-
 /usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qobject_impl.h:
 
@@ -10291,6 +9574,8 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qnamespace.h:
 
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qmetatype.h:
+
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringview.h:
@@ -10299,31 +9584,21 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qmath.h:
 
-/usr/include/c++/13/bits/predefined_ops.h:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qlist.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qiterator.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qiterable.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/__FILE.h:
-
-/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:
-
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qglobal.h:
 
 /usr/include/aarch64-linux-gnu/bits/struct_mutex.h:
 
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qtconfigmacros.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qmap.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qobject.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qforeach.h:
-
-/usr/include/aarch64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/aarch64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/13/bits/move.h:
 
@@ -10331,13 +9606,13 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/13/bits/iterator_concepts.h:
 
-/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:
-
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qflags.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qdatastream.h:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qiodevicebase.h:
 
@@ -10345,29 +9620,13 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/alloca.h:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qcompilerdetection.h:
 
-/usr/include/aarch64-linux-gnu/bits/time64.h:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qcompare_impl.h:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt6Core/Qt6CoreMacros.cmake:
+/usr/include/c++/13/cwchar:
 
-/usr/include/c++/13/bits/mofunc_impl.h:
-
-/home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qbasicatomic.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/c++/13/bits/range_access.h:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h:
-
-/usr/include/c++/13/cmath:
-
-/usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
+/home/quanduong/Downloads/Firewall_App2/PacketParser.cpp:
 
 /usr/include/c++/13/bits/functional_hash.h:
 
@@ -10375,19 +9634,35 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qarraydatapointer.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
-
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qcompare.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/sigevent_t.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qchar.h:
 
 /usr/include/aarch64-linux-gnu/asm/types.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qscopeguard.h:
+
+/usr/include/c++/13/cmath:
+
+/usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/stdint-least.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qset.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/c++/13/bits/mofunc_impl.h:
+
+/home/quanduong/Downloads/Firewall_App2/models/FirewallPacket.h:
 
 /usr/include/aarch64-linux-gnu/bits/socket_type.h:
 
@@ -10413,6 +9688,10 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qmetacontainer.h:
 
+/usr/include/aarch64-linux-gnu/bits/floatn.h:
+
+/usr/include/aarch64-linux-gnu/bits/mathcalls.h:
+
 /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/c++/13/bits/shared_ptr.h:
@@ -10421,15 +9700,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /home/quanduong/Downloads/Firewall_App2/CMakeLists.txt:
 
-/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp:
-
-/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qarraydataops.h:
-
 /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/aarch64-linux-gnu/sys/syscall.h:
+
+/usr/share/cmake-3.28/Modules/FindThreads.cmake:
 
 /usr/include/aarch64-linux-gnu/bits/long-double.h:
 
@@ -10451,11 +9726,13 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h:
 
-/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/locale.h:
-
 /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qnativeinterface.h:
+
+/usr/include/c++/13/bits/stl_bvector.h:
+
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
 
@@ -10473,39 +9750,7 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/13/limits:
 
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/asm-generic/swab.h:
-
-/home/quanduong/Downloads/Firewall_App2/main.cpp:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qtcoreexports.h:
-
-FirewallApp_autogen/moc_predefs.h:
-
-CMakeFiles/3.28.3/CMakeSystem.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/xopen_lim.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearrayview.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
-
-/home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.cpp:
-
 /usr/include/aarch64-linux-gnu/bits/errno.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/c++/13/bits/ranges_cmp.h:
-
-/usr/include/aarch64-linux-gnu/asm/unistd.h:
 
 /usr/include/c++/13/bits/invoke.h:
 
@@ -10519,27 +9764,45 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/aarch64-linux-gnu/bits/environments.h:
 
-/usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake:
 
-/usr/include/c++/13/system_error:
+/home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.cpp:
 
-/usr/include/c++/13/bits/ostream_insert.h:
+/usr/include/aarch64-linux-gnu/bits/uio_lim.h:
 
-/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/QList:
 
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qcompare_impl.h:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearrayview.h:
 
-/usr/include/c++/13/cwchar:
+/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
 
-/home/quanduong/Downloads/Firewall_App2/PacketParser.cpp:
+/usr/include/c++/13/bits/locale_classes.h:
 
-/usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake:
+/usr/include/asm-generic/swab.h:
 
-/usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h:
+/home/quanduong/Downloads/Firewall_App2/main.cpp:
 
-/usr/include/aarch64-linux-gnu/bits/stdlib-float.h:
+/usr/include/c++/13/backward/binders.h:
+
+/usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake:
+
+FirewallApp_autogen/moc_predefs.h:
+
+CMakeFiles/3.28.3/CMakeSystem.cmake:
+
+/usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qcoreevent.h:
+
+/usr/include/aarch64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qstringalgorithms.h:
+
+/usr/include/c++/13/bits/hashtable.h:
+
+/home/quanduong/Downloads/Firewall_App2/models/DNSTupleManager.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h:
 
@@ -10547,7 +9810,25 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/13/bits/ranges_cmp.h:
+
+/usr/include/aarch64-linux-gnu/asm/unistd.h:
+
+/usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/aarch64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/c++/13/string_view:
+
+/usr/include/alloca.h:
+
+/usr/include/aarch64-linux-gnu/bits/time64.h:
+
 /home/quanduong/Downloads/Firewall_App2/PacketParser.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
 
@@ -10563,17 +9844,7 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/strings.h:
-
-/usr/include/aarch64-linux-gnu/bits/sched.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
-
 /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/aarch64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/aarch64-linux-gnu/bits/endianness.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qglobalstatic.h:
 
@@ -10589,9 +9860,11 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qstringliteral.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/bits/sched.h:
 
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qcompilerdetection.h:
+/usr/include/strings.h:
+
+/home/quanduong/Downloads/Firewall_App2/viewmodels/FirewallViewModel.cpp:
 
 /home/quanduong/Downloads/Firewall_App2/models/FirewallRule.cpp:
 
@@ -10601,9 +9874,7 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /usr/include/c++/13/bits/charconv.h:
 
-FirewallApp_autogen/mocs_compilation.cpp:
-
-/usr/include/aarch64-linux-gnu/asm/posix_types.h:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qshareddata.h:
 
 /usr/include/aarch64-linux-gnu/bits/setjmp.h:
 
@@ -10615,19 +9886,25 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/bits/stl_numeric.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
-
 /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qanystringview.h:
 
 /usr/include/aarch64-linux-gnu/bits/socket.h:
 
-/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:
+/usr/include/aarch64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qarraydata.h:
 
 /usr/include/aarch64-linux-gnu/gnu/stubs.h:
 
+/usr/include/aarch64-linux-gnu/bits/math-vector.h:
+
 /usr/include/aarch64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/aarch64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/aarch64-linux-gnu/asm/socket.h:
 
@@ -10644,6 +9921,16 @@ FirewallApp_autogen/mocs_compilation.cpp:
 /usr/include/aarch64-linux-gnu/asm/sockios.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/error_t.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt6Core/Qt6CoreMacros.cmake:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/QReadWriteLock:
+
+/usr/include/aarch64-linux-gnu/bits/endianness.h:
+
+/usr/include/aarch64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qbasicatomic.h:
 
 /usr/include/aarch64-linux-gnu/bits/syscall.h:
 
@@ -10663,23 +9950,15 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/aarch64-linux-gnu/bits/types/FILE.h:
 
-/usr/include/stdio.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/clockid_t.h:
-
 /usr/include/c++/13/climits:
 
-/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qdebug.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h:
 
 /usr/include/c++/13/atomic:
-
-/usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/c++/13/bits/char_traits.h:
 
@@ -10697,6 +9976,8 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/aarch64-linux-gnu/bits/types/time_t.h:
 
+/usr/include/c++/13/bits/unique_lock.h:
+
 /usr/include/aarch64-linux-gnu/bits/typesizes.h:
 
 /usr/include/c++/13/bits/align.h:
@@ -10707,9 +9988,7 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/aarch64-linux-gnu/bits/byteswap.h:
 
-/usr/include/aarch64-linux-gnu/bits/stdint-least.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qeventloop.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qvector.h:
 
@@ -10731,11 +10010,13 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/time.h:
 
-/usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake:
-
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h:
+
+/usr/include/aarch64-linux-gnu/bits/wordsize.h:
 
 /usr/include/c++/13/pstl/execution_defs.h:
 
@@ -10743,9 +10024,13 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h:
 
+/usr/include/aarch64-linux-gnu/bits/in.h:
+
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qatomic.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qstring.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qcontiguouscache.h:
 
 /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake:
 
@@ -10753,13 +10038,7 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
-
 /usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h:
-
-/usr/include/c++/13/string_view:
-
-/usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
 
 /usr/include/c++/13/bits/enable_special_members.h:
 
@@ -10781,12 +10060,6 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
 
-/usr/include/aarch64-linux-gnu/bits/iscanonical.h:
-
-/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearray.h:
-
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qgenericatomic.h:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h:
@@ -10796,6 +10069,14 @@ FirewallApp_autogen/mocs_compilation.cpp:
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearraylist.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/c++/13/bits/range_access.h:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /usr/include/c++/13/bits/ranges_algobase.h:
 
@@ -10811,6 +10092,10 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/bits/ranges_util.h:
 
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qsystemdetection.h:
+
+/usr/include/c++/13/bits/refwrap.h:
+
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qtypeinfo.h:
 
 /usr/include/c++/13/bits/requires_hosted.h:
@@ -10825,15 +10110,15 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
-/usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
-
 /usr/include/c++/13/bits/std_mutex.h:
 
 /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
 
-/usr/include/c++/13/bits/stl_algo.h:
+/usr/lib/aarch64-linux-gnu/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake:
+FirewallApp_autogen/IVK4DJNV27/moc_DNSTupleManager.cpp:
+
+/usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
@@ -10849,7 +10134,9 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/stdio.h:
 
 /usr/include/c++/13/bits/stl_map.h:
 
@@ -10861,23 +10148,23 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qmetatype.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
-
 /usr/include/aarch64-linux-gnu/sys/types.h:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake:
-
 /usr/include/c++/13/bits/stl_tree.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qtcoreexports.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h:
 
 /usr/include/c++/13/bits/stl_vector.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
+/usr/include/c++/13/bits/stream_iterator.h:
 
 /usr/include/c++/13/bits/string_view.tcc:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qreadwritelock.h:
 
 /usr/include/c++/13/bits/unique_ptr.h:
 
@@ -10893,6 +10180,12 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/compare:
 
+/usr/include/c++/13/bits/ostream_insert.h:
+
+/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/c++/13/system_error:
+
 /usr/include/aarch64-linux-gnu/sys/time.h:
 
 /usr/include/c++/13/pstl/glue_numeric_defs.h:
@@ -10903,17 +10196,19 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/cstdint:
 
-/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake:
-
-/usr/include/limits.h:
-
-/usr/include/c++/13/cstdlib:
-
-/usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake:
-
 /usr/include/c++/13/cstring:
 
+/usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/c++/13/cwctype:
+
+/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qcoreapplication.h:
+
 /usr/include/c++/13/debug/assertions.h:
+
+/usr/include/c++/13/exception:
 
 /usr/include/c++/13/bits/memory_resource.h:
 
@@ -10921,19 +10216,15 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/ext/aligned_buffer.h:
 
-/usr/include/netinet/tcp.h:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
 /usr/include/c++/13/list:
 
 /usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/c++/13/ext/string_conversions.h:
 
-/usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake:
-
 /usr/include/c++/13/ext/type_traits.h:
+
+/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:
 
 /usr/include/c++/13/functional:
 
@@ -10973,11 +10264,7 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/tr1/exp_integral.tcc:
 
-/usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake:
-
 /usr/include/c++/13/tr1/gamma.tcc:
-
-/usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
 
 /usr/include/asm-generic/types.h:
 
@@ -11029,13 +10316,23 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/linux/const.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qutf8stringview.h:
 
-/usr/include/linux/limits.h:
+/usr/include/c++/13/ratio:
 
 /usr/include/linux/socket.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfig.cmake:
+
+/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qbytearray.h:
+
+/usr/include/aarch64-linux-gnu/bits/iscanonical.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt6/QtFeatureCommon.cmake:
+
+/usr/include/linux/types.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsTargets-none.cmake:
 
@@ -11047,14 +10344,6 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/include/wctype.h:
 
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qlist.h:
-
-/usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
-
 /usr/include/stdc-predef.h:
 
 /usr/include/stdlib.h:
@@ -11063,25 +10352,19 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake:
-
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/13/bits/stl_heap.h:
 
 /usr/include/syscall.h:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake:
-
 /usr/include/unistd.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6/Qt6ConfigExtras.cmake:
+
+/usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake:
 
@@ -11095,7 +10378,13 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
+
+/usr/include/c++/13/map:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
@@ -11104,10 +10393,6 @@ FirewallApp_autogen/mocs_compilation.cpp:
 /usr/include/aarch64-linux-gnu/asm/swab.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake:
-
-/usr/include/asm-generic/socket.h:
-
-/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
@@ -11121,7 +10406,7 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake:
+FirewallApp_autogen/RVZ4ISEY7V/moc_FirewallViewModel.cpp:
 
 /usr/include/aarch64-linux-gnu/qt6/QtCore/qcontainertools_impl.h:
 
@@ -11133,11 +10418,13 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt6Sql/Qt6SqlDependencies.cmake:
 
+/usr/include/c++/13/bits/unordered_map.h:
+
+/usr/share/cmake-3.28/Modules/Platform/Linux.cmake:
+
 /usr/lib/aarch64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets.cmake:
 
 /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
 
 /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h:
 
@@ -11147,41 +10434,11 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake:
 
-/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt6/QtFeatureCommon.cmake:
-
-/usr/include/linux/types.h:
-
-/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:
-
 /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake:
 
 /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
-
-/usr/include/c++/13/map:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in:
-
 /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake:
 
 /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake:
 
@@ -11195,78 +10452,86 @@ FirewallApp_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake:
-
-/usr/include/c++/13/bits/basic_ios.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
-
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qsystemdetection.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/c++/13/cwctype:
-
-/usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
-
 /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qarraydataops.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
+/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake:
 
-/usr/include/c++/13/bits/unordered_map.h:
+/usr/share/cmake-3.28/Modules/FindPkgConfig.cmake:
 
-/usr/share/cmake-3.28/Modules/Platform/Linux.cmake:
+/usr/include/aarch64-linux-gnu/bits/locale.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake:
+/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake:
+/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
+/usr/include/c++/13/ext/alloc_traits.h:
 
-/usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h:
+/usr/include/netinet/tcp.h:
 
-/usr/include/aarch64-linux-gnu/bits/wordsize.h:
+/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake:
+/usr/include/limits.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake:
+/usr/include/c++/13/cstdlib:
 
-/usr/include/c++/13/exception:
+/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qdeadlinetimer.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake:
+/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake:
 
-/usr/include/aarch64-linux-gnu/qt6/QtCore/qnativeinterface.h:
+/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake:
 
-/usr/include/c++/13/bits/stl_bvector.h:
+/usr/include/aarch64-linux-gnu/asm/posix_types.h:
 
-/usr/include/aarch64-linux-gnu/bits/floatn-common.h:
+FirewallApp_autogen/mocs_compilation.cpp:
 
-/usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
 
-/usr/include/c++/13/bits/stream_iterator.h:
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qpair.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake:
+/usr/include/linux/limits.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/include/aarch64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/usr/include/c++/13/bits/hashtable_policy.h:
+
+/usr/include/c++/13/ctime:
+
+/usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/c++/13/stdlib.h:
+
+/usr/include/c++/13/version:
+
+/usr/include/c++/13/cstdio:
+
+/usr/include/math.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/netinet/ip.h:
+
+/usr/include/netinet/ip6.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/QCoreApplication:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qhash.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qshareddata_impl.h:
+
+/usr/include/aarch64-linux-gnu/qt6/QtCore/qsharedpointer.h:
